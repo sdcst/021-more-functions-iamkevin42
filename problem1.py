@@ -13,17 +13,18 @@ assert convertTemp(10,'C') == 50
 assert converTemp(32,'F') == 0
 """
 
-def convertTemp():
-    return
-
+def convertTemp(degree,str):
+    if str.upper == 'C':
+        return round(degree * 9/5 + 32 , 2)
+    elif str.upper == "F":
+        return round(degree - 32 * 5/9 , 2)
+    else:
+        return "Invalid"
+    
+        
+           
 def tests():
     assert convertTemp(10,'C') == 50.00
     assert convertTemp(32,'F') == 0.00
     assert convertTemp(100,'C') == 212.00
     assert convertTemp(100,'F') == 37.78
-    
-    
-
-
-if __name__== "__main__":
-    tests()

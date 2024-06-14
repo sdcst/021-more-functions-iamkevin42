@@ -13,9 +13,22 @@ Sample assertions:
 assert btcTocad(1) == 45000
 (2 points) 
 """
+import math
 
-def btcTocad():
-    pass
+def btcTocad(a):
+    if a != float:
+        exit()
+    b=float
+    b = a*45000
+    return b
+    
+
+    
+
+
+
+
+
 
 
 """
@@ -26,5 +39,5 @@ are not executed.
 """
 if __name__ == "__main__":
     assert btcTocad(1) == 45000
-    assert btcTocad(2.5) == 135000
-    assert btcTocad(one) == 'error'
+    assert btcTocad(2.5) == 112500
+    assert btcTocad("one") == "error"
